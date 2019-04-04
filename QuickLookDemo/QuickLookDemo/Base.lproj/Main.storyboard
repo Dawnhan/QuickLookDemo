@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cnt-KT-LLK">
+                                <rect key="frame" x="155" y="129" width="65" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="3xa-rA-fEP"/>
+                                </constraints>
+                                <state key="normal" title="打开word"/>
+                                <connections>
+                                    <action selector="checkWordAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C26-WR-Rdt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5se-9j-5BP">
+                                <rect key="frame" x="158" y="252" width="59" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="YSP-OY-46E"/>
+                                </constraints>
+                                <state key="normal" title="打开PDF"/>
+                                <connections>
+                                    <action selector="checkPDFAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g7l-oE-frh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VoL-Uq-Amt">
+                                <rect key="frame" x="141" y="360" width="92" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="mco-qX-Tlr"/>
+                                </constraints>
+                                <state key="normal" title="打开多个文件"/>
+                                <connections>
+                                    <action selector="checkMultipleAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="axj-ye-eKu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Cnt-KT-LLK" secondAttribute="trailing" constant="155" id="03U-DK-TeA"/>
+                            <constraint firstItem="5se-9j-5BP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="158" id="Hze-pU-Ete"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VoL-Uq-Amt" secondAttribute="trailing" constant="142" id="J3v-sM-YgF"/>
+                            <constraint firstItem="VoL-Uq-Amt" firstAttribute="top" secondItem="5se-9j-5BP" secondAttribute="bottom" constant="78" id="KD4-e9-rx3"/>
+                            <constraint firstItem="Cnt-KT-LLK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="109" id="NVB-7w-4wF"/>
+                            <constraint firstItem="5se-9j-5BP" firstAttribute="top" secondItem="Cnt-KT-LLK" secondAttribute="bottom" constant="93" id="epP-7B-Oeo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5se-9j-5BP" secondAttribute="trailing" constant="158" id="lJX-Qk-He8"/>
+                            <constraint firstItem="VoL-Uq-Amt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="141" id="sZI-fb-CSz"/>
+                            <constraint firstItem="Cnt-KT-LLK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="155" id="z0T-c1-hcO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
