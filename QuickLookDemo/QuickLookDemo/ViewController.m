@@ -62,10 +62,16 @@
     
     self.fileUrlArray = @[[NSURL fileURLWithPath:filePath01],[NSURL fileURLWithPath:filePath02]];
     
-    //设置默认预览第几个文件，默认为第0个
-    [self.previewController setCurrentPreviewItemIndex:0];
+    QLPreviewController *previewController = [[QLPreviewController alloc] init];
     
-    [self presentViewController:self.previewController animated:YES completion:nil];
+    previewController.delegate = self;
+    
+    previewController.dataSource = self;
+    
+    [previewController setCurrentPreviewItemIndex:0];
+    
+    [self presentViewController:previewController animated:YES completion:nil];
+    
 
 }
 
